@@ -2,8 +2,16 @@ const http = require("http");
 
 const app = http.createServer((req, res) => {
   //   console.log(req.url);
-  console.log("Method konsa hein", req.method);
-  res.end("Hello server kaise ho!!");
+  // console.log("Method konsa hein", req.method);
+  // res.end("Hello duniya kaise ho!!");
+
+  if (req.url == "/student" && req.method == "GET") {
+    res.end("All Students Detail");
+  } else if (req.url == "/student" && req.method == "POST") {
+  } else if (req.url == "/student" && req.method == "PUT") {
+  } else if (req.url == "/student" && req.method == "PATCH") {
+  } else {
+  }
 });
 
 app.listen(3000, () => {

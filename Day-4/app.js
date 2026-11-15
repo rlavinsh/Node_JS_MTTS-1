@@ -1,9 +1,9 @@
 const http = require("http");
 
 const app = http.createServer((req, res) => {
-  //   console.log(req.url);
-  // console.log("Method konsa hein", req.method);
-  // res.end("Hello duniya kaise ho!!");
+  console.log(req.url);
+  console.log("Method konsa hein", req.method);
+  res.end("Hello duniya kaise ho!!");
 
   if (req.url == "/student" && req.method == "GET") {
     res.end("All Students Detail");

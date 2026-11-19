@@ -10,6 +10,16 @@ app.post("/student", (req, res) => {
   res.send("Student Created Successfully");
 });
 
+app.put("/student", (req, res) => {
+  res.send("Student Detail Updated");
+});
+app.patch("/student", (req, res) => {
+  res.send("Student Name Updated");
+});
+app.delete("/student", (req, res) => {
+  res.send("Student Deleted");
+});
+
 app.listen(3000, () => {
   console.log("mera server 3000 port par run ho rha hein");
 });

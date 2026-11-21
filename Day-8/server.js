@@ -27,7 +27,7 @@ app.get("/posts/:loginId/:appId", (req, res) => {
 
 app.get("/products", (req, res) => {
   console.log(req.query);
-  res.send("name mil gaya");
+  res.send("name");
 });
 
 // https://jsonplaceholder.typicode.com/posts
